@@ -43,8 +43,7 @@ def load_data():
 
     if missing:
         st.error("❌ Missing dataset files in repository:")
-        st.code("
-".join(missing))
+        st.code("".join(missing))
         st.info("Upload these CSV files to your GitHub repo (same folder as this script) and redeploy.")
         st.stop()
 
