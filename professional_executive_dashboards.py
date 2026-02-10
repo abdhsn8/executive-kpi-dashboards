@@ -9,7 +9,7 @@ import streamlit as st
 # =====================================================
 st.set_page_config(page_title="Executive KPI Dashboards", layout="wide")
 
-st.title("Executive KPI Dashboards")
+st.title("Executive KPI Dashboards – 28 Questions")
 
 # =====================================================
 # LOAD DATASETS
@@ -43,7 +43,8 @@ def load_data():
 
     if missing:
         st.error("❌ Missing dataset files in repository:")
-        st.code("\n".join(missing))
+        st.code("
+".join(missing))
         st.info("Upload these CSV files to your GitHub repo (same folder as this script) and redeploy.")
         st.stop()
 
@@ -299,11 +300,4 @@ elif question in ["Question 14", "Question 28"]:
     fig = px.line(traffic, x="timestamp", y="vehicles", title="Traffic Volume Trend")
     st.plotly_chart(fig, use_container_width=True)
 
-else:
-    st.info("Dashboard not implemented yet.")
-
-    fig = px.line(traffic, x="timestamp", y="vehicles", title="Traffic Volume Trend")
-    st.plotly_chart(fig, use_container_width=True)
-
-else:
-    st.info("Dashboard not implemented yet.")
+st.info("Dashboard not implemented for this selection.")
