@@ -9,7 +9,7 @@ import streamlit as st
 # =====================================================
 st.set_page_config(page_title="Executive KPI Dashboards", layout="wide")
 
-st.title("Executive KPI Dashboards – 28 Questions")
+st.title("Executive KPI Dashboards")
 
 # =====================================================
 # LOAD DATASETS
@@ -23,20 +23,20 @@ def load_data():
     import os
 
     required_files = [
-        "01_manufacturing.csv",
-        "02_ux.csv",
-        "03_ecommerce.csv",
-        "04_iot_energy.csv",
-        "05_healthcare.csv",
-        "06_telecom.csv",
-        "07_banking.csv",
-        "08_education.csv",
-        "09_logistics.csv",
-        "10_social_media.csv",
-        "11_hr.csv",
-        "12_weather.csv",
-        "13_stock.csv",
-        "14_traffic.csv",
+        "Manufacturing_Smart_Factory.csv",
+        "UX_Digital_Experience.csv",
+        "E_commerce_Sales.csv",
+        "IoT_Building_Energy.csv",
+        "Healthcare_Analytics.csv",
+        "Telecom_Churn.csv",
+        "Banking_Transactions.csv",
+        "Education_Performance.csv",
+        "Logistics_Supply_Chain.csv",
+        "Social_Media_Performance.csv",
+        "HR_Analytics.csv",
+        "Climate_Weather.csv",
+        "Stock_Market.csv",
+        "Smart_Traffic_Analytics.csv",
     ]
 
     missing = [f for f in required_files if not os.path.exists(f)]
