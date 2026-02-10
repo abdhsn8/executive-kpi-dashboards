@@ -9,7 +9,7 @@ import streamlit as st
 # =====================================================
 st.set_page_config(page_title="Executive KPI Dashboards", layout="wide")
 
-st.title("Executive KPI Dashboards – 28 Questions")
+st.title("Executive KPI Dashboards")
 
 # =====================================================
 # LOAD DATASETS
